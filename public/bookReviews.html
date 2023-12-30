@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+        color:rgb(230, 183, 126);
+        counter-reset:head;
+        text-align: justify;
+        padding: 10px;
+        }
+        h4::before{
+            counter-increment: head;
+            content: "Book " counter(head) ": ";
+        }
+        div{
+            background-color: aliceblue;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+        .main_head{
+            text-align: center;
+            color:darkblue
+        }
+        #about{
+            font-style: italic ;
+            color: rgb(200, 11, 109);
+        }
+        .headings{
+            color: rgb(123, 4, 4) !important;
+        }
+        p{
+            color: rgb(14, 184, 14);
+        }
+        .descrip{
+            color: rgb(11, 5, 11);
+        }
+        blockquote{
+            color: rgb(10, 10, 175);
+            font-style: italic;
+        }
+        #flow{
+            white-space: nowrap;
+            width:400px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            align-items: center;
+            word-break: keep-all;
+        }
+        #flow:hover{
+            overflow: visible;
+        }
+        
+    </style>
+    <title>Best books</title>
+</head>
+<body>
+    <div>
+    <h1 class="main_head">The Best Books-Review</h1>
+    <h5 class="main_head" id="about">Adam Morgan Picks Parul Sehgal on Raven Leilani, Merve Emre on Lewis Carroll, and more.</h5>
+    <p id="flow">Top reviewed books:(i.A Promised Land, ii.Alice’s Adventures in Wonderland, iii.Luster a novel, iv.The Tenant of Wildfell Hall)</p>
+
+    <hr>
+    <p class="descrip">Criticism is literature—a genre of nonfiction that can and should be as insightful, experimental, and compelling as the art it grapples with—and the following critics have beautifully proven the point. The word “best” is always a misnomer, but these are the tops on reviews.</p>
+    <h4 class="headings" style="color: brown;">Nate Marshall on Barack Obama’s <cite>A Promised Land </cite></h4>
+    <p class="descrip">A book review rarely leads to a segment on The 11th Hour with Brian Williams, but that’s what happened to Nate Marshall last month. I love how he combines a traditional review with a personal essay—a hybrid form that has become my favorite subgenre of criticism.</p>
+    <h4 class="headings" >Merve Emre on Lewis Carroll’s <cite>Alice’s Adventures in Wonderland</cite></h4>
+    <p class="descrip">I’m a huge fan of writing about books that weren’t just published in the last 10 seconds. And speaking of that hybrid form above, Merve Emre is one of its finest practitioners. This piece made me laugh out loud and changed the way I think about Lewis Carroll.</p>
+    <h4 class="headings">Parul Sehgal on Raven Leilani’s <cite>Luster a novel</cite> (The New York Times Book Review)</h4>
+    <p class="descrip">Once again, Sehgal remains the best lede writer in the business. I challenge you to read the opening of any Sehgal review and stop there.<blockquote>“You may know of the hemline theory—the idea that skirt lengths fluctuate with the stock market, rising in boom times and growing longer in recessions."</blockquote></p>
+    <h4 class="headings">Constance Grady on Anne Brontë’s <cite>The Tenant of Wildfell Hall</cite> </h4>
+    <p class="descrip">Restoring the legacies of ill-forgotten books is one of our duties as critics. Grady’s take on “the least famous sister in a family of celebrated geniuses” makes a good case for Wildfell Hall’s place alongside Wuthering Heights and Jane Eyre in the Romantic canon.</p>
+    </div>
+</body>
+</html>

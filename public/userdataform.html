@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <meta name="viewport" content="width=device-width initial-scale=1">
+      <title>html forms</title>
+      <style>
+          body {
+              background-color: rgba(149, 158, 165, 0.9)
+          }
+          form{
+              width:40%;
+              margin:10px auto;
+              padding: 40px;
+              background-color:rgba(188, 186, 191, 0.642);
+          }
+          input,textarea{
+              width:100%;
+          }
+          .inline{
+              width:15%;
+              border-radius: 2px;    
+          }
+          .gender{
+              width: unset;
+              margin: 0 5px 1px 0;
+              vertical-align: middle;
+              }
+      </style>
+  </head>
+  <body>
+      <form action="/action_page.php" target="_blank" >
+          <h2 style="text-align: center;">User data collection form</h2>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username"
+              required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="eg:sample@gmail.com"><br><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+          <label for="dob">DoB:</label>
+          <input type="date" id="birthday" name="birthday"><br><br>
+          <label for="place">Place:</label>
+          <input type="place" name="place" value="Kottayam"><br><br>
+          <label for="gender">Gender:</label><br>
+          <input type="radio" value="male" class="gender" name="gender">Male<br>
+          <input type="radio" value="female" class="gender" name="gender">Female<br>
+          <input type="radio" value="LGBTQ+" class="gender" name="gender">LGBTQ+<br><br>
+          <label for="skills">Your skills:</label>
+          <input list="skills">
+          <datalist id="skills" size=3 multiple>
+              <option value="Python"></option>
+              <option value="HTML"></option>
+              <option value="CSS"></option>
+              <option value="Bootstrap"></option>
+              <option value="MongoDB"></option>
+              <option value="React"></option>
+              <option value="SQL" selected></option>
+          </datalist><br><br>
+          <label for="datemax">Enter starting date:</label>
+          <input type="date" name="datemax" id="datemax" max="2023-09-31"><br><br>
+          <label for="datemin">Enter ending date:</label>
+          <input type="date" name="datemin" id="datemin" min="1990-12-31"><br><br>
+          <label for="message" id="message">Introduce yourself briefly:</label><br>
+          <textarea name="message" rows="10" cols="25" placeholder="I love to coding at beachside..."></textarea><br><br>
+          <div style="width:100%;color: aqua;">
+          <input type="button" value="Submit" class="inline" style="background-color: rgb(50, 134, 50);float: left;">
+          <input type="reset" value="Reset" class="inline" style="background-color:rgb(181, 51, 51);float: right; ">
+          </div>
+      </form>
+  </body>
+  
+  </html> 
+  
+  
+   
+  
